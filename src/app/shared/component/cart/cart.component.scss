@@ -1,0 +1,15 @@
+.cartWrapper {
+    width: 600px;
+    margin: 50px auto 0;
+    .header {
+        border-bottom: 1px solid #ccc;
+        font-weight: bold;
+    }
+    .productTot {
+        border-top: 1px solid #ccc;
+        font-weight: bold;
+    }
+    .checkoutBtn {
+        margin-top: 30px;
+    }
+}

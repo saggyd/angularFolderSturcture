@@ -1,0 +1,15 @@
+<form role="form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <fieldset>							
+      <p class="text-uppercase"> Login using your account: </p>	
+        
+      <div class="form-group">
+        <input type="email" formControlName="userID" name="usernameLogin" id="usernameLogin" class="form-control input-lg" placeholder="username">
+      </div>
+      <div class="form-group">
+        <input type="password" formControlName="password" name="passwordLogin" id="passwordLogin" class="form-control input-lg" placeholder="Password">
+      </div>
+      <div>
+        <input type="submit" class="btn btn-primary" value="Sign In" [disabled]="!loginForm.valid">
+      </div>
+    </fieldset>
+</form>

@@ -1,0 +1,15 @@
+<!--<app-header></app-header>-->
+<div class="wrapper">
+    <div class="container">
+        <div class="row">
+            <ul class="pull-right filterCont">
+                <li>Filter:</li>
+                <li><a href="" (click)="sort($event,'prodPrice')">Price</a></li>
+                <li><a href="" (click)="sort($event,'prodTitle')">Title</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <app-product [product]='prod' *ngFor="let prod of productArr | order:sortingName:isDesc"></app-product>
+        </div>
+    </div>
+</div>

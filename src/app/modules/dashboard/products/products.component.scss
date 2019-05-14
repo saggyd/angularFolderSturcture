@@ -1,0 +1,14 @@
+.filterCont {
+    list-style: none;
+    li {
+        float: left;
+        padding: 5px 10px;
+        border-right: 1px solid #ccc;
+        &:last-child {
+            border-right: none;
+        }
+        &:first-child {
+            border-right: none;
+        }
+    }
+}

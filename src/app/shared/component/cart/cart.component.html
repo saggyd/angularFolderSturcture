@@ -1,0 +1,42 @@
+<div class="wrapper">
+  <div class="container">
+    <div class="cartWrapper">
+      <div class="row">
+        <h2>Cart Details</h2>
+      </div>
+      <div class="row header">
+        <div class="col-md-6">
+          Product Name
+        </div>
+        <div class="col-md-3">
+          Product Quantity
+        </div>
+        <div class="col-md-3">
+          Product Price
+        </div>
+      </div>
+      <div class="row" *ngIf="!cartData.length">
+        <p>Nothing is added in your cart</p>
+      </div>
+      <div class="row" *ngFor="let cart of cartData">
+        <div class="col-md-6">
+         {{cart.prodTitle}}
+        </div>
+        <div class="col-md-3">
+          {{cart.quantity}}
+        </div>
+        <div class="col-md-3">
+         {{cart.prodPrice}}
+        </div>
+      </div>
+      <div class="row productTot">
+        <div class="col-md-3 col-md-offset-9">
+         totatl: {{totalPrice}}
+        </div>
+      </div>
+      <div class="row">
+        <button class="checkoutBtn btn btn-primary pull-right" (click)="checkoutHandler($event)">Checkout</button>
+      </div>
+    </div>
+  </div>
+</div>

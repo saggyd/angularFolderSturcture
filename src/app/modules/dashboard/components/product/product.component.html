@@ -1,0 +1,15 @@
+<div class="col-md-12 productWrapper">
+  <div class="row">
+    <div class="col-md-2">
+      <div class="imagewrapper"><p>Image will be placed here</p></div>
+    </div>
+    <div class="col-md-8">
+      <h4><a routerLink="/dashboard/productDet/{{product.prodID}}">{{product.prodTitle}}</a></h4>
+      <p>{{product.prodDesc}}</p>
+      <p>RS.{{product.prodPrice}}</p>
+    </div>
+    <div class="col-md-2">
+      <button class="btn btn-primary cartBtn" (click)="handleClick(product)">Add to cart +</button>
+    </div>
+  </div>
+</div>

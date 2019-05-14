@@ -1,0 +1,37 @@
+.productWrapper {
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    .imagewrapper {
+        width: 98%;
+        margin: 12px 1%;
+        float: left;
+        background-color: #ccc;
+        color: #000;
+        height: 150px;
+        p{
+            margin-top: 50px;
+            transform: rotate(-25deg);
+            /* Legacy vendor prefixes that you probably don't need... */
+            /* Safari */
+            -webkit-transform: rotate(-25deg);
+            /* Firefox */
+            -moz-transform: rotate(-25deg);
+            /* IE */
+            -ms-transform: rotate(-25deg);
+            /* Opera */
+            -o-transform: rotate(-25deg);
+            /* Internet Explorer */
+            filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+        }
+    }
+    .cartBtn {
+        margin-top: 30px;
+    }
+    h4 {
+        a {
+            color: #4e4e4e;
+            
+        }
+    }
+}
